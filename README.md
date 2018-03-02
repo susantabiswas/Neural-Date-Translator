@@ -7,6 +7,8 @@ The task is to convert this to a more normalized format like **YYYY-MM-DD**.
 For this task a **sequence to sequence encoder-decoder** network has been used. LSTM cell units  have been used in both the encoder as well as the decoder network.
 This model also use **Attention Mechanism**.
 
+![Alt Text](media/1.gif)
+
 
 There are three main files:
 1. **Neural Date Translation (Jupyter Notebook)** : Contains the main code along with explanation. Also this is to be used is retraining is required.
