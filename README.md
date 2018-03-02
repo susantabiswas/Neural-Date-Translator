@@ -13,10 +13,13 @@ This model also use **Attention Mechanism**.
 There are three main files:
 1. **Neural Date Translation (Jupyter Notebook)** : Contains the main code along with explanation. Also this is to be used is retraining is required.
 2. **Neural Date Translation (Python script)** : Incase you just want to see this in action. This doesn't train the model instead uses the saved weight values.
-3. **utility** : used for generating and preprocessing training data.
+3. **utility** : used for generating and preprocessing training data.<br>
 
 
 
 
-### <u>Credits:
+
+
+
+#### <u>Credits:
 This project is based on the assignment from Sequence Models Specialization by Deeplearning.ai on Coursera. <br>https://www.coursera.org/learn/nlp-sequence-models/home/welcome
