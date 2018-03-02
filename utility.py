@@ -92,7 +92,7 @@ def create_dataset(m):
     machine_vocab = sorted(machine_vocab)
 
     return dataset, human_vocab, machine_vocab
-    
+
 
 def preprocess_data(m, dataset, human_char_idx, machine_char_idx, Tx, Ty):
     # separate the tuples
@@ -119,7 +119,9 @@ def preprocess_data(m, dataset, human_char_idx, machine_char_idx, Tx, Ty):
 
 def create_training_data(m, Tx, Ty):
     dataset, human_vocab, machine_vocab = create_dataset(m)
-    
+    # add the unknown and pad characters
+    #human_vocab += ['<UNK>', '<PAD>']
+
     # now we will create a dictionary for mapping the vocabulary tokens to numerical indices
     human_char_idx = dict((token, i) for i, token in enumerate(human_vocab))
     # reverse mapping from indices to tokens for machine readable dates
